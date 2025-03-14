@@ -6,7 +6,7 @@
 /*   By: pausanch <pausanch@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 12:42:51 by pausanch          #+#    #+#             */
-/*   Updated: 2024/11/07 15:22:03 by pausanch         ###   ########.fr       */
+/*   Updated: 2025/03/11 11:45:26 by pausanch         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int main()
 		std::cout << "3. EXIT" << std::endl;
 
 		std::string option;
-		std::cout << "Selecciona una opcion: " ;
+		std::cout << "Select an option: " ;
 		std::cin >> option;
 		int opt;
 
@@ -58,38 +58,38 @@ int main()
 			std::string name, lastname, nick, phone, secret;
 			
 			do {
-				std::cout << "Nombre: ";
+				std::cout << "Name: ";
 				std::cin >> name;
 				if (name.empty())
-					std::cout << "Invalido. Campo vacio" << std::endl;
+					std::cout << "Invalid. Empty field" << std::endl;
 			} while (name.empty());
 			
 			do {
-				std::cout << "Apellido: ";
+				std::cout << "Last name: ";
 				std::cin >> lastname;
 				if (lastname.empty())
-					std::cout << "Invalido. Campo vacio" << std::endl;
+					std::cout << "Invalid. Empty field" << std::endl;
 			} while (lastname.empty());
 			
 			do {
-				std::cout << "Apodo: ";
+				std::cout << "Nickname: ";
 				std::cin >> nick;
 				if (nick.empty())
-					std::cout << "Invalido. Campo vacio" << std::endl;
+					std::cout << "Invalid. Empty field" << std::endl;
 			}while (nick.empty());
 
 			do {
-				std::cout << "Telefono: ";
+				std::cout << "Phone: ";
 				std::cin >> phone;
 				if (!is_number(phone))
-					std::cout << "Solo debe contener numeros" << std::endl;
+					std::cout << "Must contain only numbers" << std::endl;
 			} while (!is_number(phone));
 			
 			do {
-				std::cout << "Secreto: ";
+				std::cout << "Dark secret: ";
 				std::cin >> secret;
 				if (secret.empty())
-					std::cout << "Invalido. Campo vacio" << std::endl;
+					std::cout << "Invalid. Empty field" << std::endl;
 			} while (secret.empty());
 
 			Contact newContact(name, lastname, nick, phone, secret);
@@ -102,11 +102,11 @@ int main()
 			break;
 			
 		case 3:
-			std::cout << "Saliendo del programa..." << std::endl;
+			std::cout << "Leaving the program..." << std::endl;
 			return (0);
 		
 		default:
-			std::cout << "Opcion invalida" << std::endl;
+			std::cout << "Invalid option" << std::endl;
 			break;
 		}
 	}

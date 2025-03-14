@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pausanch <pausanch@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/11 11:50:57 by pausanch          #+#    #+#             */
+/*   Updated: 2024/11/11 11:50:57 by pausanch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Zombie.hpp"
 
 Zombie::Zombie(std::string name) {
@@ -9,5 +21,5 @@ Zombie::~Zombie() {
 }
 
 void Zombie::announce() {
-	std::cout << this->name << ": Braiiiiiiinnnssss..." << std::endl;
+	std::cout << this->name << ":  BraiiiiiiinnnzzzZ..." << std::endl;
 }

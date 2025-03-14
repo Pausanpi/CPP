@@ -1,6 +1,6 @@
 NAME = megaphone
-CPP = g++
-FLAGS = -Wall -Wextra -Werror -std=c++98
+CPP = c++
+FLAGS = -std=c++98 -Wall -Wextra -Werror
 SRC = megaphone.cpp
 OBJ = $(SRC:.cpp=.o)
 
@@ -8,18 +8,18 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	@$(CPP) $(FLAGS) -o $@ $(OBJ)
-	@echo "$(NAME) compilation successful."
+	@echo "Compilation successful"
 
 %.o: %.cpp
 	@$(CPP) $(FLAGS) -c $< -o $@
 
 clean:
 	@rm -f $(OBJ)
-	@echo "Compiled objects have been removed."
+	@echo "Compiled objects have been removed"
 
 fclean: clean
 	@rm -f $(NAME)
-	@echo "$(NAME) Cleaned."
+	@echo "Cleaned"
 
 re: fclean all
 

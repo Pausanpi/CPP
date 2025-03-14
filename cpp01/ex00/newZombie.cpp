@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pausanch <pausanch@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/11 11:50:38 by pausanch          #+#    #+#             */
+/*   Updated: 2024/11/11 11:50:38 by pausanch         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Zombie.hpp"
 
-Zobie* newZombie(std::string name) {
+Zombie* newZombie(std::string name) {
 	return new Zombie(name);
 }
